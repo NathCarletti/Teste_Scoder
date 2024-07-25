@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Captação de Lead</h1>
 
-## Getting Started
+<p align="center">O projeto tem como objetivo cadastrar leads, a fim de que, à partir de uma tabela, o setor comercial possa analisar tais dados e avaliar para um futuro contato. Tal tabela mostrará a localização de determinado lead, além do tipo de fornecimento, o valor mensal de consumo, e também o mesmo com desconto por mês além de uma estatística de até 5 anos. E, por fim, pode-se fazer o download da tabela como .csv.</p>
 
-First, run the development server:
+<p>Inicialmente, baixe o projeto em uma pasta no seu computador. Utilize o comando 
+  ```
+  npm install
+  ```
+  para baixar todas as dependências.</p>
+<p>Em seguida, vá ao arquivo app/package.json e utilize o debugger 
+  ```
+  next dev
+  ```
+  </p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p>Abra o link</p> [http://localhost:3000](http://localhost:3000) em seu browser para visualizar.</p>
+<p>Inicialmente, uma tela de login será visível, pedindo que entre com seu e-mail e senha ou para cadastrar-se. </p>
+<p>Caso já tenha uma conta, o site verificará se os dados condizem com os salvos no sistema, e se validado, levar-te-á à página de leads, à qual exibirá a tabela de leads e um formulário para o cadastro de novas leads.</p>
+<p>Caso ainda não tenha uma conta, basta clicar no botão de cadastro e será conduzido a um formulário para que preencha com seus dados e crie um e-mail e uma senha. Ao criar, será encaminhado para a página de leads.</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>** Algumas observações técnicas e melhorias: **</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p>*A validação de inputs foi feita em um arquivo à parte, tive problemas com a instalação de algumas bibliotecas no início do projeto, porém resolvi tentar novamente, mas afim de não atrasar o projeto, deixei separadamente funcionando 90%.</p>
+<p>*Melhoraria a seleção de Estados e Tipos de Fornecimento para um dropdown, a fim de melhor funcionalidade para usuário.</p>
+<p>*Por fim, um sistema com hierarquia poderia ser acrescentado.</p>
+<p>*O arquivo .env segue à parte, enviado por e-mail.</p>

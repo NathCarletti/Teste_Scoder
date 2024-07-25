@@ -3,6 +3,8 @@
 
 import FormNew from "../components/form-new-user/page";
 
+import UserForm from "../components/form/index";
+
 export default function NewAccount() {
 
 
