@@ -24,8 +24,8 @@ const DeleteLeadButton: React.FC<DeleteLeadButtonProps> = ({ leadId, onDelete })
   };
 
   return (
-    <button onClick={handleDelete}>
-      Delete Lead
+    <button className='text-red-700 font-extrabold text-lg' onClick={handleDelete}>
+      X
     </button>
   );
 };
