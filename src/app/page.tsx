@@ -21,11 +21,6 @@ export default function Home() {
        
     event.preventDefault(); 
 
-        console.log("event",event);
-        // const dataForm = {
-        //     email: event.target.email.value,
-        //     password: event.target.password.value
-        // }
         try {
           const response = await fetch(`/api/login?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`);
           if (!response.ok) {
@@ -41,8 +36,6 @@ export default function Home() {
           setError(error.message);
         } 
       };
-  
-      
       
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white" >

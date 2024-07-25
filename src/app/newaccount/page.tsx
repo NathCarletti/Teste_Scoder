@@ -3,6 +3,8 @@
 
 import FormNew from "../components/form-new-user/page";
 
+import UserForm from "../components/form/index";
+
 export default function NewAccount() {
 
 
@@ -11,6 +13,7 @@ export default function NewAccount() {
             <div className="mb-2 "><p className="font-bold">Crie um novo usuário:</p></div>
             
                 <FormNew />
+                {/*<UserForm />   Formulário com validações de inputs*/} 
         </div>
     </main>);
 }
