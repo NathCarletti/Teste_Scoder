@@ -48,7 +48,7 @@ const FormNew = () => {
             setPassword('');
             setCpf('');
             setPhone('');
-            await delay(1500); // 2 segundos de atraso
+            await delay(1500); // 1.5 segundos de delay
             console.log("Redirecionando...");
             router.push('/show-lead');
         } catch (error: any) {
@@ -65,7 +65,7 @@ const FormNew = () => {
             <div className="min-w-96">
                 <div className="mb-4">
                     <label className=" flex flex-row" htmlFor="name">
-                        <span className="self-center align-middle align-mnamedle after:content-['*'] after:ml-0.5 after:text-red-500 text-sm font-medium text-slate-700 mr-1">Nome:
+                        <span className="self-center align-middle after:content-['*'] after:ml-0.5 after:text-red-500 text-sm font-medium text-slate-700 mr-1">Nome:
                         </span>
                         <input type="text" name="name" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300
                      placeholder-slate-400 focus:outline-none focus:border-sky-500 

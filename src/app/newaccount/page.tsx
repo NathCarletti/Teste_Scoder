@@ -11,6 +11,7 @@ export default function NewAccount() {
             <div className="mb-2 "><p className="font-bold">Crie um novo usuário:</p></div>
             
                 <FormNew />
+                {/*<UserForm />   Formulário com validações de inputs*/} 
         </div>
     </main>);
 }

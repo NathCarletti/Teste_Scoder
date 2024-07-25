@@ -52,6 +52,7 @@ const LeadsTable = () => {
   };
   
   return (
+    
     <table className="border-collapse border border-slate-500 m-4 text-sm">
       <thead>
         <tr className='text-center'>
@@ -88,6 +89,7 @@ const LeadsTable = () => {
         ))}
       </tbody>
     </table>
+  
   );
 };
 
