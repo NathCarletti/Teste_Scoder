@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import DeleteLeadButton from '../delete-button/deleteButton';
 
 interface Lead {
   id: number;
@@ -16,6 +17,8 @@ const LeadsTable = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+
+  //Busca os leads e lista na tabela
   useEffect(() => {
     const fetchLeads = async () => {
       try {
@@ -39,6 +42,15 @@ const LeadsTable = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
+  //Chama a função deletelead a fim de deletar uma lead pelo id
+  interface DeleteLeadButtonProps {
+    leadId: number;
+    onDelete: () => void;
+  }
+  const handleDelete = (id: number) => {
+    setLeads(leads.filter((lead) => lead.id !== id));
+  };
+  
   return (
     <table className="border-collapse border border-slate-500 m-4 text-sm">
       <thead>
@@ -53,6 +65,7 @@ const LeadsTable = () => {
           <th className='border border-slate-600'>Valor em 1 ano</th>
           <th className='border border-slate-600'>Valor em 3 anos</th>
           <th className='border border-slate-600'>Valor em 5 anos</th>
+          <th className='border border-slate-600'>Deletar?</th>
         </tr>
       </thead>
       <tbody className='text-center'>
@@ -68,6 +81,9 @@ const LeadsTable = () => {
             <td  className="border border-slate-700">R${lead.price*0.75*12}</td>
             <td  className="border border-slate-700">R${lead.price*0.75*36}</td>
             <td  className="border border-slate-700">R${lead.price*0.75*60}</td>
+            <td  className="border border-slate-700" key={lead.id}>
+            <DeleteLeadButton leadId={lead.id} onDelete={() => handleDelete(lead.id)} />
+          </td>
           </tr>
         ))}
       </tbody>
