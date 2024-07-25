@@ -1,0 +1,18 @@
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://testscoder:1234@localhost:5432/testscoder?schema=public
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: testscoder
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: testscoder
+    ports:
+      - '5432:5432'
