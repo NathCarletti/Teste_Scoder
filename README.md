@@ -1,6 +1,6 @@
 <h1 align="center">Captação de Lead</h1>
 
-<p align="center">O projeto tem como objetivo cadastrar leads, a fim de que, à partir de uma tabela, o setor comercial possa analisar tais dados e avaliar para um futuro contato. Tal tabela mostrará a localização de determinado lead, além do tipo de fornecimento, o valor mensal de consumo, e também o mesmo com desconto por mês além de uma estatística de até 5 anos.</p>
+<p align="center">O projeto tem como objetivo cadastrar leads, a fim de que, à partir de uma tabela, o setor comercial possa analisar tais dados e avaliar para um futuro contato. Tal tabela mostrará a localização de determinado lead, além do tipo de fornecimento, o valor mensal de consumo, e também o mesmo com desconto por mês além de uma estatística de até 5 anos. E, por fim, pode-se fazer o download da tabela como .csv.</p>
 
 <p>Inicialmente, baixe o projeto em uma pasta no seu computador. Utilize o comando 
   ```
@@ -21,7 +21,6 @@
 <p>** Algumas observações técnicas e melhorias: **</p>
 
 <p>*A validação de inputs foi feita em um arquivo à parte, tive problemas com a instalação de algumas bibliotecas no início do projeto, porém resolvi tentar novamente, mas afim de não atrasar o projeto, deixei separadamente funcionando 90%.</p>
-<p>*A parte para baixar em csv foi feita, porém não testada totalmente.</p>
 <p>*Melhoraria a seleção de Estados e Tipos de Fornecimento para um dropdown, a fim de melhor funcionalidade para usuário.</p>
 <p>*Por fim, um sistema com hierarquia poderia ser acrescentado.</p>
 <p>*O arquivo .env segue à parte, enviado por e-mail.</p>
